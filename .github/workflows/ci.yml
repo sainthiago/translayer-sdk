@@ -16,10 +16,11 @@ jobs:
           node-version: 20
           cache: pnpm
 
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v3
-        with:
-          version: 10
+      - name: Enable Corepack (pnpm)
+        run: corepack enable
+
+      - name: Activate pnpm
+        run: corepack prepare pnpm@10.30.2 --activate
 
       - name: Install dependencies
         run: pnpm install
