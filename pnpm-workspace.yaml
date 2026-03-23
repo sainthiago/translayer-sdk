@@ -1,0 +1,8 @@
+packages:
+  - "packages/core"
+  - "packages/providers/*"
+  - "packages/cache"
+  - "packages/shared"
+onlyBuiltDependencies:
+  - esbuild
+

@@ -1,0 +1,15 @@
+node_modules
+.pnpm-store
+
+# Build artifacts
+dist
+
+# Package-level build output
+**/dist
+
+# Test/coverage
+coverage
+
+# Docs output (deployed via GitHub Actions to gh-pages)
+docs
+

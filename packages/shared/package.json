@@ -1,0 +1,15 @@
+{
+  "name": "@translayer/shared",
+  "version": "0.1.0",
+  "type": "module",
+  "private": true,
+  "sideEffects": false,
+  "scripts": {
+    "build": "echo \"(shared has no build step)\"",
+    "test": "vitest run --passWithNoTests",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "lint": "echo \"(lint not configured yet)\"",
+    "clean": "true"
+  }
+}
+

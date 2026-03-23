@@ -1,0 +1,14 @@
+{
+  "entryPoints": [
+    "packages/core/src/index.ts",
+    "packages/providers/providers/src/index.ts",
+    "packages/providers/openai/src/index.ts",
+    "packages/providers/deepl/src/index.ts",
+    "packages/cache/src/index.ts"
+  ],
+  "out": "docs",
+  "tsconfig": "tsconfig.json",
+  "cleanOutputDir": true,
+  "includeVersion": false
+}
+

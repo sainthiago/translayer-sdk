@@ -1,0 +1,27 @@
+{
+  "name": "@translayer/providers",
+  "version": "0.1.0",
+  "type": "module",
+  "private": false,
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "types": "./dist/index.d.ts",
+  "files": ["dist"],
+  "dependencies": {
+    "@translayer/providers-openai": "workspace:*",
+    "@translayer/providers-deepl": "workspace:*"
+  },
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run --passWithNoTests",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "lint": "echo \"(lint not configured yet)\"",
+    "clean": "rm -rf dist"
+  }
+}
+
